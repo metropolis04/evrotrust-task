@@ -1,0 +1,23 @@
+{
+    "loginpage": {
+        "loginform": {
+            "title": "Sign in to your account",
+            "inputs": {
+                "email": "Email address",
+                "password": "Password"
+            },
+            "buttonSubmit": "Sign in",
+            "forgot": "Forgot password?"
+        }
+    },
+    "resetpasswordpage": {
+        "form": {
+            "title": "Reset Your Password",
+            "inputs": {
+                "email": "Email address"
+            },
+            "buttonsubmit": "Send reset link"
+        },
+        "waiting_response": "you already send your reset request. Please check your email and follow the instructions to continue."
+    }
+}
