@@ -19,5 +19,10 @@
             "buttonsubmit": "Send reset link"
         },
         "waiting_response": "you already send your reset request. Please check your email and follow the instructions to continue."
+    },
+    "main_navigation": {
+        "buttons": {
+            "profile": "My profile"
+        }
     }
 }

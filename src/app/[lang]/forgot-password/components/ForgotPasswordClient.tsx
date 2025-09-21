@@ -8,9 +8,9 @@ import { setCookie } from "cookies-next";
 import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import { FormEvent } from "react";
-import type { DataResponse, ClientSuccessLoginResponse, UserClient, ClientLoginResponse } from "@/app/utils/users";
+import type { UserClient, ClientLoginResponse } from "@/app/utils/users";
 import styles from '../utils/reset.module.css'
-import { BasicButton } from "@/app/utils/components/@library/Buttons";
+import  BasicButton  from "@/app/utils/components/@library/Buttons";
 import { BasicInput } from "@/app/utils/components/@library/InputComponent";
 import type { DictType } from "../../dictonaries";
 

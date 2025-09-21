@@ -21,6 +21,11 @@ export interface DictType {
             buttonsubmit: string,
         }
          waiting_response: string
+    },
+    main_navigation: {
+        buttons: {
+            profile: string
+        }
     }
 }
 

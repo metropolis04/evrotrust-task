@@ -5,7 +5,7 @@ interface BasicButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
     classes?: string
 }
 
-export const BasicButton:React.FunctionComponent<BasicButtonProps> = memo(({text, classes, ...rest}) => {
+const BasicButton:React.FunctionComponent<BasicButtonProps> = memo(({text, classes, ...rest}) => {
 
     return (
         <>
@@ -17,4 +17,7 @@ export const BasicButton:React.FunctionComponent<BasicButtonProps> = memo(({text
             </button>
         </>
     )
-}) 
+});
+
+BasicButton.displayName = "BasicButton";
+export default BasicButton

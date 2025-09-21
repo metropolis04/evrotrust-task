@@ -11,7 +11,7 @@ import { FormEvent } from "react";
 import type { UserClient, ClientLoginResponse } from "@/app/utils/users";
 import ProjectLink from "@/app/utils/components/ProjectLink";
 import styles from '../utils/login.module.css';
-import { BasicButton } from "@/app/utils/components/@library/Buttons";
+import BasicButton from "@/app/utils/components/@library/Buttons";
 import { BasicInput } from "@/app/utils/components/@library/InputComponent";
 import type { DictType } from "../../dictonaries";
 

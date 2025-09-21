@@ -6,10 +6,10 @@ const locales = ['en','bg'];
 
 const mwUtils = {
     getLocale(req:NextRequest) {
-        let header = req.headers.get('accept-language');
-        let headers = { 'accept-language': header?.toString() }
-        let languages = new Negotiator({ headers }).languages()
-        let defaultLocale = 'bg'
+        const header = req.headers.get('accept-language');
+        const headers = { 'accept-language': header?.toString() }
+        const languages = new Negotiator({ headers }).languages()
+        const defaultLocale = 'bg'
         const matchLocaleHeader = match(languages, locales, defaultLocale);
         const { pathname } = req.nextUrl;
         const pathnameHasLocale = locales.some(

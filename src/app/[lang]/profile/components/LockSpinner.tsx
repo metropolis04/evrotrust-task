@@ -1,4 +1,4 @@
-import { SpinnerIcon } from "@/app/utils/icons"
+import  SpinnerIcon from "@/app/utils/icons"
 
 export default function LockSpinner() {
 

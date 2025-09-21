@@ -1,5 +1,5 @@
 import { jwt } from "@/app/utils/services/jwtService";
-import type { NextResponse, NextRequest } from "next/server";
+import type { NextRequest } from "next/server";
 import dataUtils from "@/app/utils/users";
 
 export async function POST(req:NextRequest) {
@@ -7,7 +7,7 @@ export async function POST(req:NextRequest) {
     const reqBody = await req.json();
     const emailVerified = dataUtils.checkEmail(reqBody.email);
     if (emailVerified.success) {
-        const nexttoken = jwt({ ...reqBody, exp: 86400, reset: true });
+        const nexttoken = jwt({ ...reqBody, reset: true }, 86400);
         return new Response(JSON.stringify({ ...emailVerified, token: nexttoken}), {
             status: 200,
             headers: {

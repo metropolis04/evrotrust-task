@@ -1,5 +1,5 @@
 import { jwt, getCrypto } from "@/app/utils/services/jwtService";
-import type { NextResponse, NextRequest } from "next/server";
+import type { NextRequest } from "next/server";
 import dataUtils from "@/app/utils/users";
 
 export async function POST(req:NextRequest) {

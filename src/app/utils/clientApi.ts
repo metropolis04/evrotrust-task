@@ -1,4 +1,4 @@
-export const postFetchAsync = async <T>(url:string , bodyData:Record<string, any> , message?:Record<string, string>): Promise<T> => {
+export const postFetchAsync = async <T>(url:string , bodyData:Record<string, unknown> , message?:Record<string, string>): Promise<T> => {
     return new Promise((res,rej) => {
       fetch(`${url}` , {
         method : "POST",

@@ -1,16 +1,12 @@
-import { useAppSelector, useAppDispatch } from "@/app/services/reduxstore/hooks";
-import { updatesearch } from "@/app/services/reduxstore/store";
+import { useAppSelector } from "@/app/services/reduxstore/hooks";
 
 const useArchiveStoreService = () => {
 
     const con = useAppSelector(state => state.search);
-    const dispatch = useAppDispatch();
-
+    
     const getArchiveStore = () => {
         return con.login
     }
-
-    
 
     return {
         getArchiveStore,

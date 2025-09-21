@@ -7,7 +7,7 @@ interface Props {
     classes?: string
 }
 
-export const SpinnerIcon:React.FunctionComponent<Props> = memo(({width, height, title, classes}) => {
+const SpinnerIcon:React.FunctionComponent<Props> = memo(({width, height, classes}) => {
 
     return (
         <>
@@ -26,3 +26,6 @@ export const SpinnerIcon:React.FunctionComponent<Props> = memo(({width, height, 
         </>
     )
 });
+
+SpinnerIcon.displayName = "SpinnerIcon";
+export default SpinnerIcon

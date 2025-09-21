@@ -1,4 +1,3 @@
-import type { ReactElement } from "react";
 import { ForgotPasswordClient } from "./components/ForgotPasswordClient";
 import { getDictionary } from "../dictonaries";
 import { getAuth } from "@/app/utils/services/authService";
@@ -12,7 +11,7 @@ export default async function ForgotPasswordPage({
     const { lang } = await params;
     const dict = await getDictionary(lang);
     const authData = await getAuth();
-    if (authData.resetData?.email && authData.resetData.reset ) {
+    if (authData.resetData && authData.resetData.email && authData.resetData.reset ) {
       return (
         <>
           <WaitingClientPage email={authData.resetData?.email} dict={dict} />

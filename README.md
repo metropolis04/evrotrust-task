@@ -20,14 +20,14 @@ cd evrotrust-task
 
 2. Install project dependencies:
 ```bash
-npm ci
+npm install
 ```
 
 ## Set up the environment variables
 #### Create a .env file in the project root and add the necessary environment variables.
 #### MUST HAVE variables are:
 ```bash
-TOKEN_SECRET='VQdlegHXBWCLOvq6aDxy'
+TOKEN_SECRET=VQdlegHXBWCLOvq6aDxy
 HOST=http://localhost:3000
 ```
 

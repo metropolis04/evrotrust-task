@@ -15,7 +15,7 @@ async function ProfilePage({
         return (
             <>
                 <div className="min-h-[80vh] h-screen flex flex-row justify-center bg-grey-400" >
-                    <ArchiveClientPageServer authData={authData} />
+                    <ArchiveClientPageServer />
                 </div>
             </>
         )

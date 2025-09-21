@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ClientPrevider } from "./services/reduxstore/ClientProvider";
+import "../globals.css";
+import { ClientPrevider } from "../services/reduxstore/ClientProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
