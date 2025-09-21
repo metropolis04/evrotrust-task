@@ -14,8 +14,8 @@ This is a Next.js ( Node.js server ) auth application that allows login and send
 
 1. Clone the repository:
 ```bash
-git clone https://gitlab.aiidatapro.net/news-caster-group/newscaster-next-editor.git
-cd newscaster-next-editor
+git clone https://github.com/metropolis04/evrotrust-task
+cd evrotrust-task
 ```
 
 2. Install project dependencies:
@@ -27,10 +27,8 @@ npm ci
 #### Create a .env file in the project root and add the necessary environment variables.
 #### MUST HAVE variables are:
 ```bash
-API_HOST=https://newsletter-gate-dev.aiidatapro.net
-NODE_TLS_REJECT_UNAUTHORIZED=0
-API_SIGNAL_AI_HOST=https://signalai-test.aiidatapro.net
-SIGNAL_AI_API_KEY=4f3b6e4c2da3d892f1790c2db02d
+TOKEN_SECRET='VQdlegHXBWCLOvq6aDxy'
+HOST=http://localhost:3000
 ```
 
 ### Build application
