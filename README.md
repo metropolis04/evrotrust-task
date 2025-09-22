@@ -14,7 +14,7 @@ This is a Next.js ( Node.js server ) auth application that allows login and send
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/metropolis04/evrotrust-task
+git clone https://github.com/metropolis04/evrotrust-task.git
 cd evrotrust-task
 ```
 

@@ -5,7 +5,7 @@ export default function ProjectLink({section, children, classes}: {section:strin
 
     return (
         <>
-            <Link href={`${section}`} className={classes ?? ""} >
+            <Link href={`${section}`} className={classes ?? ""} prefetch={false} >
                 {children}
             </Link>
         </>
